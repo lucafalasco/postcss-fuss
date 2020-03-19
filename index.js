@@ -47,7 +47,6 @@ function fussToClasses(rule, fussFunctions) {
     const childList = children.map(classToFuss)
     const fussNodes = func(...args, childList).map(fussRule)
     const res = fussGroup(fussNodes)
-    res.prepend(`/* ${params} */`)
     return res
 }
 
